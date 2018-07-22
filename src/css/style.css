@@ -1,0 +1,54 @@
+body {
+ background: #fdfdfd;
+ margin: 0;
+ padding: 0;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.tags-list {
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+}
+
+.tags-list li {
+  display: inline-block;
+  position: relative;
+}
+
+.tag {
+  box-sizing: border-box;
+  display: inline-block;
+  color: red;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 5px;
+  white-space: nowrap;
+  padding: 6px 2px;
+  text-overflow: ellipsis;
+}
+.tag span {
+  display: none;
+}
+.tag:hover span {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -21px;
+  background-color: #dcdcdc;
+  padding: 3px 4px;
+  border: 1px solid #000;
+}
+
+
+
+.tag:hover {
+  background: #dfdfdf;
+}
